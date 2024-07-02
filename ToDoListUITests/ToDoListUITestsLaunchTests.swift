@@ -29,4 +29,19 @@ final class ToDoListUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+    
+    func testSwitch() throws {
+        
+        let app = XCUIApplication()
+        // app.buttons["Create An Account"].tap()
+        app.navigationBars["_TtGC7SwiftUI19UIHosting"].buttons["Back"].tap()
+        
+        let collectionViewsQuery = app.collectionViews
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.buttons["Log in"]/*[[".cells.buttons[\"Log in\"]",".buttons[\"Log in\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        let pleaseFillInAllFieldsStaticText = collectionViewsQuery/*@START_MENU_TOKEN@*/.staticTexts["Please fill in all fields"]/*[[".cells.staticTexts[\"Please fill in all fields\"]",".staticTexts[\"Please fill in all fields\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        pleaseFillInAllFieldsStaticText.tap()
+        
+                
+    }
 }

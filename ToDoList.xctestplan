@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "D2AE7A40-5206-4759-A307-A492658DACD8",
+      "name" : "Test Scheme Action",
+      "options" : {
+        "areLocalizationScreenshotsEnabled" : true,
+        "maximumTestRepetitions" : 2,
+        "repeatInNewRunnerProcess" : true,
+        "testRepetitionMode" : "none"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:ToDoList.xcodeproj",
+      "identifier" : "5B36C9B22C27BCB10092E657",
+      "name" : "ToDoList"
+    },
+    "testRepetitionMode" : "retryOnFailure"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ToDoList.xcodeproj",
+        "identifier" : "5B36C9C22C27BCB30092E657",
+        "name" : "ToDoListTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:ToDoList.xcodeproj",
+        "identifier" : "5B36C9CC2C27BCB30092E657",
+        "name" : "ToDoListUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
